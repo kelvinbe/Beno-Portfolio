@@ -10,15 +10,15 @@ import Image from "next/image";
 const navLinks = [
   {
     title: "About",
-    path: "#about",
+    path: "/about",
   },
   {
     title: "Projects",
-    path: "#projects",
+    path: "/projects",
   },
   {
     title: "Contact",
-    path: "#contact",
+    path: "/contact",
   },
 ];
 
@@ -32,7 +32,7 @@ const Navbar = () => {
           href={"/"}
           className="text-2xl md:text-5xl text-white font-semibold"
         >
-             <Image
+            <Image
               src="/images/beno.jpg"  
               alt="hero image"
               style={{borderRadius: '146px'}}
