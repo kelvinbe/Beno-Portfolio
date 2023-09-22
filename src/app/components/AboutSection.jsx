@@ -5,16 +5,23 @@ import TabButton from "./TabButton";
 
 const TAB_DATA = [
   {
-    title: "Skills",
-    id: "skills",
+    title: "Work",
+    id: "work",
     content: (
       <ul className="list-disc pl-2">
-        <li>Node.js</li>
-        <li>Express</li>
-        <li>PostgreSQL</li>
-        <li>Sequelize</li>
-        <li>JavaScript</li>
-        <li>React</li>
+        <li>
+          Jr Developer at Orteo Payment Systems Limited - <span>2019 - 2020</span>
+        </li>
+        <li>
+          Software Developer at The Silver Logic - <span>2020 - 2021</span>
+        </li>
+        <li>
+          Freelance Developer Woked on various projects - <span>2021 - 2022</span>
+        </li>
+        <li>
+         Frontend Software Developer at Niebex Software - <span>2022 - 2023</span>
+         
+        </li>
       </ul>
     ),
   },
@@ -23,25 +30,57 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>Fullstack Academy of Code</li>
-        <li>University of California, Santa Cruz</li>
+        <li>
+          Andela Bootcamp - <span>2019</span>
+        </li>
+        <li>
+          Bachelors Of Business and Information Technology - <span>St Pauls University Nairobi, 2016</span>
+        </li>
+        <li>
+          Diploma in Information Technology - <span>St Pauls University Nairobi, 2015</span>
+        </li>
       </ul>
     ),
   },
   {
-    title: "Certifications",
-    id: "certifications",
+    title: "Skills",
+    id: "skills",
     content: (
       <ul className="list-disc pl-2">
-        <li>AWS Cloud Practitioner</li>
-        <li>Google Professional Cloud Developer</li>
+        <li>
+          NextJS - <span>Implementation from figma or any other design tool</span>
+        </li>
+        <li>
+          Typescript - <span>Building Applications using Typescript language</span>
+        </li>
+        <li>
+          React JS - <span>Buliding Beautiful Scalable User Interface using React Framework </span>
+        </li>
+        <li>
+          React Native - <span>Buliding Mobile Applications using React Native and Expo</span>
+        </li>
+        <li>
+          StoryBook - <span>Building Components to separate ui from logic</span>
+        </li>
+        <li>
+          Tailwind CSS - <span>Styling Web apps using tailwind css</span>
+        </li>
+        <li>
+          Chakra UI - <span>CSS Library for building beautiful UI</span>
+        </li>
+        <li>
+          Shad CN - <span>CSS Library for building beautiful UI</span>
+        </li>
+        <li>
+          Material UI - <span>CSS Library for building beautiful UI</span>
+        </li>
       </ul>
     ),
   },
 ];
 
 const AboutSection = () => {
-  const [tab, setTab] = useState("skills");
+  const [tab, setTab] = useState("work");
   const [isPending, startTransition] = useTransition();
 
   const handleTabChange = (id) => {
@@ -57,20 +96,18 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-            I am a full stack web developer with a passion for creating
-            interactive and responsive web applications. I have experience
-            working with JavaScript, React, Redux, Node.js, Express, PostgreSQL,
-            Sequelize, HTML, CSS, and Git. I am a quick learner and I am always
-            looking to expand my knowledge and skill set. I am a team player and
-            I am excited to work with others to create amazing applications.
+          A highly dependable Front-end Developer with 4+ years of experience in deploying Software, databases, and
+apps using frameworks such as NextJS and React, React Native among other tools. Holds a demonstrated track record of
+setting up Software such as Elastic Search and Stackdriver as well as implementing UI features. I have fully
+developed and implemented a functional WebApp among other projects.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
-              selectTab={() => handleTabChange("skills")}
-              active={tab === "skills"}
+              selectTab={() => handleTabChange("work")}
+              active={tab === "work"}
             >
               {" "}
-              Skills{" "}
+              Work{" "}
             </TabButton>
             <TabButton
               selectTab={() => handleTabChange("education")}
@@ -80,11 +117,11 @@ const AboutSection = () => {
               Education{" "}
             </TabButton>
             <TabButton
-              selectTab={() => handleTabChange("certifications")}
-              active={tab === "certifications"}
+              selectTab={() => handleTabChange("skills")}
+              active={tab === "skills"}
             >
               {" "}
-              Certifications{" "}
+              skills{" "}
             </TabButton>
           </div>
           <div className="mt-8">
