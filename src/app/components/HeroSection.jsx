@@ -15,18 +15,18 @@ const HeroSection = () => {
           transition={{ duration: 0.5 }}
           className="col-span-8 place-self-center text-center sm:text-left justify-self-start"
         >
-          <h1 className="text-white mb-4 text-3xl sm:text-2xl lg:text-7xl lg:leading-normal font-extrabold">
+          <h1 className="text-white  text-3xl sm:text-2xl lg:text-6xl lg:leading-normal font-extrabold">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">
-              Hello, I&apos;m{" "}
+              Beno, Here
             </span>
             <br></br>
             <TypeAnimation
               sequence={[
-                "Beno",
+                "I",
                 1000,
-                "a Web Developer",
+                "Build Web Applications",
                 1000,
-                "Mobile Developer",
+                "Mobile Applications",
                 1000
               ]}
               wrapper="span"
@@ -34,7 +34,7 @@ const HeroSection = () => {
               repeat={Infinity}
             />
           </h1>
-          <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
+          <p className="text-[#ADB7BE] text-base sm:text-lg mb-32 lg:text-xl">
           I am a highly skilled and passionate React and React Native developer with over four years of professional experience in the field.
           </p>
         </motion.div>
@@ -44,11 +44,11 @@ const HeroSection = () => {
           transition={{ duration: 0.5 }}
           className="col-span-4 place-self-center mt-4 lg:mt-0"
         >
-          <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
+          <div className="rounded-full bg-[#181818] w-[250px] h-[250px] mb-8 lg:w-[400px] lg:h-[400px] relative">
             <Image
-              src="/images/me.jpg"  
+              src="/rub.jpg"  
               alt="hero image"
-              style={{borderRadius: '146px'}}
+              style={{borderRadius: '90px', height: '460px'}}
               className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
               width={300}
               height={300}
