@@ -17,13 +17,13 @@ const EmailSection = () => {
       <div className="z-10">
         <div className="flex">
         <h5 className="text-xl font-bold text-white my-2">
-          Let`&apos;s Connect
+          Let&apos;s Connect
         </h5>
         <h5 className="text-xl font-bold text-white my-2 ml-10">
-          Let`&apos;s Build
+          Let&apos;s Build
         </h5>
         <h5 className="text-xl font-bold text-white my-2 ml-10">
-          Let`&apos;s Grow
+          Let&apos;s Grow
         </h5>
         </div>
         <p className="text-[#ADB7BE] mb-4 max-w-md">
@@ -40,7 +40,7 @@ const EmailSection = () => {
             <Image src={LinkedinIcon} alt="Linkedin Icon" />
           </Link>
           <Link href="https://mail.google.com/mail/u/0/#compose">
-            <MdEmail style={{width: 50, height:50}}/>
+            <MdEmail color="white" style={{width: 50, height:50}}/>
           </Link>
         </div>
       </div>
