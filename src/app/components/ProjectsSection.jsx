@@ -7,12 +7,12 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "Bonga Social Application",
-    description: "NextJS social application with clerk authentication",
-    image: "/images/projects/Prop.png",
+    title: "Swarm Mobile Application",
+    description: "React Native Mobile Application For Realtors",
+    image: "/images/projects/play.png",
     tag: ["All", "Web"],
-    gitUrl: "https://github.com/kelvinbe/bonga",
-    previewUrl: "https://bonga-fawn.vercel.app/",
+    gitUrl: "https://github.com/kelvinbe/Swarm",
+    previewUrl: "https://play.google.com/store/apps/details?id=com.kelvinkb.swarm&pcampaignid=web_share",
   },
   {
     id: 2,
