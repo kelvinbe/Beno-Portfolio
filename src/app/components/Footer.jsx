@@ -14,7 +14,7 @@ const Footer = () => {
               height={80}
             />
         </span>
-        <p className="text-slate-600 sm:text-sm">© 2023 all rights reserved.</p>
+        <p className="text-slate-600 sm:text-sm">© 2024 all rights reserved.</p>
       </div>
     </footer>
   );
