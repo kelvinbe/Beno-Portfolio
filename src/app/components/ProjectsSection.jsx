@@ -10,7 +10,7 @@ const projectsData = [
     title: "Swarm Mobile Application",
     description: "React Native Mobile Application For Realtors",
     image: "/images/projects/play.png",
-    tag: ["All", "Web"],
+    tag: ["All", "Mobile"],
     gitUrl: "https://github.com/kelvinbe/Swarm",
     previewUrl: "https://play.google.com/store/apps/details?id=com.kelvinkb.swarm&pcampaignid=web_share",
   },
