@@ -52,12 +52,12 @@ const projectsData = [
   },
   {
     id: 6,
-    title: "Jipange Mobile Application",
-    description: "React Native Pomodoro Application",
-    image: "/images/projects/pomo.png",
-    tag: ["All", "Mobile"],
-    gitUrl: "https://github.com/kelvinbe/react-native-pomodoro",
-    previewUrl: "https://play.google.com/store/apps/details?id=my.jipange.app",
+    title: "Divvly Car hosting application",
+    description: "A Car Sharing Application NextJS",
+    image: "/images/projects/Car.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/kelvinbe/Car-host",
+    previewUrl: "https://drive.google.com/file/d/1U4v7tlf84ZuQCbELv8IRG5CoORMDmhe5/view?usp=drive_link",
   },
 ];
 
