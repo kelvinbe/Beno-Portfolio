@@ -17,11 +17,11 @@ const achievementsList = [
   },
   {
     metric: "Github Contributions",
-    value: "70",
+    value: "77",
   },
   {
     metric: "Years of experience",
-    value: "4",
+    value: "5",
   },
 ];
 

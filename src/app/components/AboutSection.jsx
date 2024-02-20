@@ -20,7 +20,9 @@ const TAB_DATA = [
         </li>
         <li>
          Frontend Software Developer at Niebex Software - <span>2022 - 2023</span>
-         
+        </li>
+        <li>
+         Freelance Software Developer - <span>2024 - now</span>
         </li>
       </ul>
     ),

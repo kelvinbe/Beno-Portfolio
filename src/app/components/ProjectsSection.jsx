@@ -34,12 +34,12 @@ const projectsData = [
   },
   {
     id: 4,
-    title: "Wedding Web Application",
-    description: "A wedding web app to raise funds",
-    image: "/images/projects/wedd.png",
+    title: "Rick and Morty Peeps",
+    description: "A NextJS Web Application using the Rick and Morty API",
+    image: "/images/projects/Rick.png",
     tag: ["All", "Web"],
-    gitUrl: "https://github.com/kelvinbe/vicswedding",
-    previewUrl: "https://vicweds.web.app/",
+    gitUrl: "https://github.com/kelvinbe/rick-morty",
+    previewUrl: "https://rick-morty-seven-pi.vercel.app/",
   },
   {
     id: 5,

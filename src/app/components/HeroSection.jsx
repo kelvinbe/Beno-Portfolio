@@ -35,7 +35,7 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-32 lg:text-xl">
-          I am a highly skilled and passionate React and React Native developer with over four years of professional experience in the field.
+          I am a highly skilled and passionate React and React Native developer with five years of professional experience in the field.
           </p>
         </motion.div>
         <motion.div
