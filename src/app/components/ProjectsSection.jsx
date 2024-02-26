@@ -32,6 +32,15 @@ const projectsData = [
     gitUrl: "https://github.com/kelvinbe/Car-host",
     previewUrl: "https://drive.google.com/file/d/1U4v7tlf84ZuQCbELv8IRG5CoORMDmhe5/view?usp=drive_link",
   },
+  {
+    id: 7,
+    title: "Crypto Dashboards",
+    description: "A Crypto Dashboard Application NextJS",
+    image: "/images/projects/crypto.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/kelvinbe/Crypto-Dashboard",
+    previewUrl: "https://crypo-dash.vercel.app/",
+  },
 ];
 
 const ProjectsSection = () => {

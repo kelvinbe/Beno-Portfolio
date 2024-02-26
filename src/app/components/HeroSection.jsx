@@ -34,7 +34,7 @@ const HeroSection = () => {
               repeat={Infinity}
             />
           </h1>
-          <p className="text-[#ADB7BE] text-base sm:text-lg mb-32 lg:text-xl">
+          <p className="text-[white] text-base sm:text-lg mb-32 lg:text-xl">
           I am a highly skilled and passionate React and React Native developer with five years of professional experience in the field.
           </p>
         </motion.div>
