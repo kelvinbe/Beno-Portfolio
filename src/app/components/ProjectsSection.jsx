@@ -12,7 +12,7 @@ const projectsData = [
     image: "/images/projects/play.png",
     tag: ["All", "Mobile"],
     gitUrl: "https://github.com/kelvinbe/Swarm",
-    previewUrl: "https://play.google.com/store/apps/details?id=com.kelvinkb.swarm&pcampaignid=web_share",
+    previewUrl: "https://appho.st/d/NU28lSk0",
   },
   {
     id: 4,
