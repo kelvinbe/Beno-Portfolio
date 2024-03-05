@@ -38,8 +38,8 @@ const HeroSection = () => {
             )}
           </h1>
           <p className="glitch-text text-[white] mt-5 text-base sm:text-lg mb-32 lg:text-xl">
-            I am a highly skilled and passionate React and React Native developer with five years of professional experience in the field.
-          </p>
+  I am a highly skilled and passionate <span className="underline-react">React</span> and <span className="underline-react-native">React Native</span> developer with five years of professional experience in the field.
+</p>
         </motion.div>
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
