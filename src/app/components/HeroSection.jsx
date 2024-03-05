@@ -1,11 +1,15 @@
-"use client";
+'use client'
 import React from "react";
 import Image from "next/image";
-import { TypeAnimation } from "react-type-animation";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
+import { AnimatedText } from "./AnimatedText";
 
 const HeroSection = () => {
+
+
+  
+
   return (
     <section className="lg:py-16">
       <div className="grid grid-cols-1 sm:grid-cols-12">
@@ -15,27 +19,26 @@ const HeroSection = () => {
           transition={{ duration: 0.5 }}
           className="col-span-8 place-self-center text-center sm:text-left justify-self-start"
         >
-          <h1 className="text-white  text-3xl sm:text-2xl lg:text-6xl lg:leading-normal font-extrabold">
+          <h1 className="text-white text-3xl sm:text-2xl lg:text-6xl lg:leading-normal font-extrabold">
+            
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">
               Beno, Here
             </span>
-            <br></br>
-            <TypeAnimation
-              sequence={[
-                "I",
-                1000,
-                "Build Web Applications",
-                1000,
-                "Mobile Applications",
-                1000
-              ]}
-              wrapper="span"
-              speed={30}
-              repeat={Infinity}
-            />
+            <br />
+            {typeof window !== 'undefined' && (
+              <AnimatedText
+                el="h2"
+                text={[
+                  "I build Web Applications",
+                  "Mobile Applications",
+                ]}
+                className="text-4xl"
+                repeatDelay={10000}
+              />
+            )}
           </h1>
-          <p className="text-[white] text-base sm:text-lg mb-32 lg:text-xl">
-          I am a highly skilled and passionate React and React Native developer with five years of professional experience in the field.
+          <p className="glitch-text text-[white] mt-5 text-base sm:text-lg mb-32 lg:text-xl">
+            I am a highly skilled and passionate React and React Native developer with five years of professional experience in the field.
           </p>
         </motion.div>
         <motion.div
