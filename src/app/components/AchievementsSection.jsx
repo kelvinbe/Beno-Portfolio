@@ -1,6 +1,8 @@
 "use client";
 import React from "react";
 import dynamic from "next/dynamic";
+import Clock from "./ClockComponent";
+import ImageComponent from "./OctoImage";
 
 const AnimatedNumbers = dynamic(
   () => {
@@ -14,14 +16,18 @@ const achievementsList = [
     metric: "Projects",
     value: "20",
     postfix: "+",
+    image: <ImageComponent image={'/project.gif'} />
+    
   },
   {
     metric: "Github Contributions",
     value: "77",
+    image: <ImageComponent image={'/octo.gif'} />
   },
   {
     metric: "Years of experience",
     value: "5",
+    image: <Clock />
   },
 ];
 
@@ -50,8 +56,10 @@ const AchievementsSection = () => {
                     };
                   }}
                 />
+
                 {achievement.postfix}
               </h2>
+              {achievement.image}
               <p className="text-[white] text-base">{achievement.metric}</p>
             </div>
           );
