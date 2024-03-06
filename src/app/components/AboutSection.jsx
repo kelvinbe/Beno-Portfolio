@@ -98,7 +98,7 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-          A highly dependable Front-end Developer with 4+ years of experience in deploying Software, databases, and
+          A highly dependable Front-end Developer with 5+ years of experience in deploying Software, databases, and
 apps using frameworks such as NextJS and React, React Native among other tools. Holds a demonstrated track record of
 setting up Software such as Elastic Search and Stackdriver as well as implementing UI features. I have fully
 developed and implemented a functional WebApp among other projects.
