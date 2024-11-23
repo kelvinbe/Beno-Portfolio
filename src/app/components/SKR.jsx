@@ -10,18 +10,23 @@ import { Box } from "@chakra-ui/react";
 
 const SakuraBackground = ({ children }) => {
 
-  const [isSmallScreen, setIsSmallScreen] = React.useState(window.innerWidth <= 640);
+  const [isSmallScreen, setIsSmallScreen] = React.useState(false);
 
   React.useEffect(() => {
+    // This code runs only on the client side
     const handleResize = () => {
       setIsSmallScreen(window.innerWidth <= 640);
     };
+
+    // Initial screen size check
+    handleResize();
 
     window.addEventListener("resize", handleResize);
     return () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+  
   return (
     <Box className="container w-full bg-[#fef5e7] min-h-screen overflow-y-auto">
       <div className="flex flex-col md:flex-row justify-between items-center md:items-start">
