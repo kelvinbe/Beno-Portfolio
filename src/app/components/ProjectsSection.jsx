@@ -5,24 +5,26 @@ import ProjectTag from "./ProjectTag";
 import { motion, useInView } from "framer-motion";
 
 const projectsData = [
+
   {
     id: 1,
-    title: "Swarm Mobile Application",
-    description: "React Native Mobile Application For Realtors",
-    image: "/images/projects/play.png",
+    title: "Terminal Management System",
+    description: "A Terminal Management System to aid banks with terminal management (not mobile responsive)",
+    image: "/images/projects/tms.png",
     tag: ["All", "Mobile"],
-    gitUrl: "https://github.com/kelvinbe/Swarm",
-    previewUrl: "https://appho.st/d/NU28lSk0",
+    gitUrl: "",
+    previewUrl: "https://terminalms.netlify.app/",
   },
   {
-    id: 4,
-    title: "Rick and Morty Peeps",
-    description: "A NextJS Web Application using the Rick and Morty API",
-    image: "/images/projects/Rick.png",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/kelvinbe/rick-morty",
-    previewUrl: "https://rick-morty-seven-pi.vercel.app/",
+    id: 2,
+    title: "Card Management System",
+    description: "A Card Management System to aid banks with card management (not mobile responsive)",
+    image: "/images/projects/cms.png",
+    tag: ["All", "Mobile"],
+    gitUrl: "",
+    previewUrl: "https://cmssnairobi.netlify.app/",
   },
+
   {
     id: 6,
     title: "Divvly Car hosting application",
@@ -40,6 +42,26 @@ const projectsData = [
     tag: ["All", "Web"],
     gitUrl: "https://github.com/kelvinbe/Crypto-Dashboard",
     previewUrl: "https://crypo-dash.vercel.app/",
+  },
+  {
+    id: 4,
+    title: "Rick and Morty Peeps",
+    description: "A NextJS Web Application using the Rick and Morty API",
+    image: "/images/projects/Rick.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/kelvinbe/rick-morty",
+    previewUrl: "https://rick-morty-seven-pi.vercel.app/",
+  },
+  
+
+    {
+    id: 8,
+    title: "Swarm Mobile Application",
+    description: "React Native Mobile Application For Realtors",
+    image: "/images/projects/play.png",
+    tag: ["All", "Mobile"],
+    gitUrl: "https://github.com/kelvinbe/Swarm",
+    previewUrl: "https://appho.st/d/NU28lSk0",
   },
 ];
 
