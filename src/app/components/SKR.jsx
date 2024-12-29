@@ -6,9 +6,13 @@ import mountain from "../../../src/app/assets/mountain.webp";
 import flowers from "../../../src/app/assets/flower.webp";
 import me from "../../../src/app/assets/me.jpg";
 import sun from '../../../src/app/assets/sun.webp'
-import { Box } from "@chakra-ui/react";
+import { Box, useDisclosure } from "@chakra-ui/react";
+import ModalComponent from "./Modal/Modal";
 
 const SakuraBackground = ({ children }) => {
+
+  const { isOpen, onOpen, onClose } = useDisclosure()
+
 
   const [isSmallScreen, setIsSmallScreen] = React.useState(false);
 
@@ -35,6 +39,7 @@ const SakuraBackground = ({ children }) => {
         style={{marginLeft: isSmallScreen ? "-16rem" : "0" }}
         
         className="flex-shrink-0 flex w-[179px]  sm:w-[400px] md:w-[300px] lg:w-[400px] mb-4 md:mb-0">
+
          <Image
             src={flowers}
             width={398}
@@ -52,7 +57,7 @@ const SakuraBackground = ({ children }) => {
         </div>
 
         {/* Center Content */}
-        <div className="w-full flex flex-col justify-center items-center px-4 md:px-0">
+        <div style={{marginTop: !isSmallScreen ? "8rem" : "0" , marginLeft: !isSmallScreen ? "8rem" : "0"}} className="w-full flex flex-col justify-center  items-center px-4 md:px-0">
           <div className="w-[150px] md:w-[200px]">
             <Image
               src={me}
@@ -70,12 +75,15 @@ const SakuraBackground = ({ children }) => {
             >
               Welcome To My Web Corner!
             </h4>
-            <p className="mt-2 ">
-              My journey in the world of web development began with a curiosity
+            <p style={{paddingLeft: isSmallScreen ? "3rem" : "0" ,paddingRight: isSmallScreen ? "3rem" : "0" }} className="mt-2 mx-5">
+              My journey in the world of software began with a curiosity
               for building interactive and seamless digital experiences.
             </p>
+      <ModalComponent onClose={onClose} onOpen={onOpen} isOpen={isOpen} />
+
             <div className="flex items-center justify-center mt-4">
-              <span className="changecolor">Click to continue</span>
+              <span className="changecolor" onClick={onOpen}>Click to continue</span>
+              
             </div>
           </div>
         </div>
