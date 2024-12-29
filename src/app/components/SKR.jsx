@@ -32,8 +32,8 @@ const SakuraBackground = ({ children }) => {
   }, []);
   
   return (
-    <Box className="container w-full bg-[#fef5e7] min-h-screen overflow-y-auto">
-      <div className="flex flex-col md:flex-row justify-between items-center md:items-start">
+    <Box className="container w-full bg-[#fef5e7] min-h-screen overflow-y-auto px-5">
+      <div className="flex flex-col md:flex-row justify-between items-center md:items-start px-5">
         {/* Flowers Image */}
         <div
         style={{marginLeft: isSmallScreen ? "-16rem" : "0" }}
